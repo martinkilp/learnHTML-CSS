@@ -10,8 +10,10 @@ function toggleSidebar() {
 
 function toggleSubmenu(button) {
 
-    if(!button.nextElementSibling.classList.contains('show')){
-        closeAllSubMenus()
+    if (window.innerWidth <= 800) {
+        if (!button.nextElementSibling.classList.contains('show')) {
+            closeAllSubMenus()
+        }
     }
 
     button.nextElementSibling.classList.toggle('show')
