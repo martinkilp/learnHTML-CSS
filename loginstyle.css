@@ -1,19 +1,21 @@
 .loginframe {
-width: 300px;
-margin: 100px auto;
-padding: 20px;
-text-align: center;
-border: 1px solid #ccc;
-border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .loginframe h1 {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .loginframe input {
-width: 90%;
-padding: 10px;
-margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
+
+
 

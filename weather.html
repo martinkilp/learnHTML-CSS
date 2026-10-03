@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKC - Weather</title>
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Tallinn ilm</h1>
+        <p>Temperatuur: <span id="temperature">Laen...</span></p>
+        <p>Niiskus: <span id="humidity">Laen...</span></p>
+        <p>Tuul: <span id="wind">Laen...</span></p>
+
+        <script>
+            let laiuskraad = 59.4370;
+            let pikkuskraad = 24.7536;
+
+            const apiUrl =
+                "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.4370&lon=24.7536";
+
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+
+                    const current = data.properties.timeseries[0];
+
+                    const temperature =
+                        current.data.instant.details.air_temperature;
+
+                    const humidity =
+                        current.data.instant.details.relative_humidity;
+
+                    const wind =
+                        current.data.instant.details.wind_speed;
+
+
+                    document.getElementById("temperature").textContent =
+                        temperature + " °C";
+
+                    document.getElementById("humidity").textContent =
+                        humidity + " %";
+
+                    document.getElementById("wind").textContent =
+                        wind + " m/s";
+
+                });
+        </script>
+
+
+    </main>
+
+</body>
