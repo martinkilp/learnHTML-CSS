@@ -46,6 +46,9 @@ body {
 
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
+    place-items: center;
+    border-radius: 20px;
+
 }
 
 .todayweather {
@@ -53,7 +56,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    align-items: center;    
+    align-items: center;
 }
 
 .img_todayweather {
@@ -73,18 +76,21 @@ body {
 
 .wind-humidity {
     border: 1px solid grey;
-    width: 100%;
+    width: 90%;
+    border-radius: 40px;
 
 }
 
 .liveforecast {
     border: 1px solid grey;
-
+    width: 90%;
+    border-radius: 40px;
 }
 
 .sunsetime {
     border: 1px solid grey;
     width: 80%;
+    border-radius: 40px;
 }
 
 
@@ -93,7 +99,7 @@ body {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
-    justify-content: center;
+    place-items: center;
 
     margin: 0;
     gap: 0;
@@ -103,12 +109,11 @@ body {
     border: 1px solid grey;
     display: grid;
     justify-content: center;
-
     height: auto;
-
+    width: fit-content;
     margin: 0;
     padding: 0;
-
+    border-radius: 40px;
 }
 
 .weekdaycard_name {
