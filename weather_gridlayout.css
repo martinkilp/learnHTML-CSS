@@ -28,10 +28,11 @@ body {
     display:grid;
     grid-template-rows: 4fr 1fr 4fr;
     place-items: center;
+    overflow: hidden;
     
     border-radius: 50px;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 50px rgba(235, 220, 7, 0.5);
+    background: rgba(240, 239, 239, 0.3);
+    box-shadow: 0 0 50px rgba(235, 110, 7, 0.5);
 
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
