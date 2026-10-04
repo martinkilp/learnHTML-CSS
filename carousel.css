@@ -44,7 +44,7 @@ body {
     margin: auto;
     width: 90%;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
     background-color: white;
 }
 .carousel::-webkit-scrollbar {
@@ -52,6 +52,7 @@ body {
 }
 
 .group {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;

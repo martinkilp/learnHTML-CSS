@@ -1,0 +1,44 @@
+
+
+.carousel {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+}
+
+.group {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.card {
+    flex: 0 0 auto;
+    padding: 0.1em;
+    background: transparent;
+    border: 1px solid rgb(66, 151, 248);
+    border-radius: 0.2em;
+    box-shadow: 0 0 10px rgb(66, 151, 248);
+}
+
+.card img {
+    display: block;
+    width: auto;
+    height: 2em;
+    border-radius: 0.1em;
+}
+
+.card:hover {
+    border-color: rgb(52, 253, 86);
+    box-shadow: 0 0 10px rgb(23, 245, 23);
+}
+
