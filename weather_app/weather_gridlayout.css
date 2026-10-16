@@ -63,7 +63,7 @@ body {
     border: 1px solid grey;
     width: 90%;
     height: 90%;
-    background-image: url(./icons/weathericons/rainy_300dp.svg);
+    background-image: url(./icons/rainy_300dp.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
